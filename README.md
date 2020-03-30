@@ -30,7 +30,8 @@ Virtual site of a touring company focused on organazing nature tours.
 
 ## About the Project
 ![Screenshot of the project](screenshot.png)
-natours is a web page example developed by Jonas Schmedtmann in the Udemy course "Advanced CSS and Sass course". I wrote this code to learn the advanced techniques used nowadays to develop modern web pages. Besides, this code will help to develop other webpages as a code reference.
+<br />
+Natours is a web page example developed by Jonas Schmedtmann in the Udemy course "Advanced CSS and Sass course". I wrote this code to learn the advanced techniques used nowadays to develop modern web pages. Besides, this code will help to develop other webpages as a code reference.
 
 **Notes**
 >I've applied some personal changes in this project, so the final result may not be the same as the original code developed by Jonas. It has some visual changes and functional changes in the js code.
@@ -46,14 +47,14 @@ This project is a great introductions to use Sass code. Its awesome benefits are
 
 ### BEM Methodology
 In this project, I used the BEM (Block, Element, Modifier) methodology, wich is a component-based approach to web development. The idea behind it is to divide the user interface into independent blocks. This makes interface development easy and fast even with a complex UI, and it allows reuse of existing code without copying and pasting. For exemple:
-```HTML
+```html
 <!-- HTML code -->
 <header class="header">
 	<h2 class="header__heading header__heading--medium"></h2>
 	<button class="btn btn--white"></button>
 </header>
 ```
-```CSS
+```css
 // SCSS Code
 .header {
 
