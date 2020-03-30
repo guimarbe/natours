@@ -1,26 +1,35 @@
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/guimarbe/natours">
+    <img src="img/logo-green-1x.png" alt="Logo" width="120" height="120">
+  </a>
+</p>
+
 <!-- PROJECT NAME -->
 # Natours
 Virtual site of a touring company focused on organazing nature tours.
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-*[About the Project](#about-the-project)
-	*[Sass](#sass)
-	*[BEM Methodology](#bem-methodology)
-	*[Architecture](#architecture)
-*[Getting Started](#getting-started)
-	*[Prerequisites](#prerequisites)
-	*[Installing](#installing)
-*[Usage](#usage)
-*[Deployment](#deployment)
-*[Built With](#built-with)
-*[Authors](#authors)
-*[License](#license)
-*[Contact](#contact)
-*[Acknowlegments](#acknowledgements)
+* [About the Project](#about-the-project)
+	* [Sass](#sass)
+	* [BEM Methodology](#bem-methodology)
+	* [Architecture](#architecture)
+* [Getting Started](#getting-started)
+	* [Prerequisites](#prerequisites)
+	* [Installing](#installing)
+* [Usage](#usage)
+* [Deployment](#deployment)
+* [Built With](#built-with)
+* [Authors](#authors)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowlegments](#acknowledgements)
 
 
 ## About the Project
+![Screenshot of the project](screenshot.png)
 natours is a web page example developed by Jonas Schmedtmann in the Udemy course "Advanced CSS and Sass course". I wrote this code to learn the advanced techniques used nowadays to develop modern web pages. Besides, this code will help to develop other webpages as a code reference.
 
 **Notes**
@@ -37,14 +46,14 @@ This project is a great introductions to use Sass code. Its awesome benefits are
 
 ### BEM Methodology
 In this project, I used the BEM (Block, Element, Modifier) methodology, wich is a component-based approach to web development. The idea behind it is to divide the user interface into independent blocks. This makes interface development easy and fast even with a complex UI, and it allows reuse of existing code without copying and pasting. For exemple:
-```
+```HTML
 <!-- HTML code -->
 <header class="header">
 	<h2 class="header__heading header__heading--medium"></h2>
 	<button class="btn btn--white"></button>
 </header>
 ```
-```
+```CSS
 // SCSS Code
 .header {
 
@@ -122,7 +131,7 @@ In terms of development, is really important taking care of the folder hierarchy
 
 <!-- GETTING STARTED -->
 ## Getting Started
-To setting up the project locally you can download a copy of this project clicking on the "*Clone or download*" and then *Download ZIP*, or you can follow these simple exemple steps to get a copy on your repository.
+To setting up the project locally you can download a copy of this project clicking on the *Clone or download* and then *Download ZIP*, or you can follow these simple exemple steps to get a copy on your repository.
 
 ### Prerequisites
 First things first, you need to install npm to use all the tools provided in the project.
@@ -157,8 +166,8 @@ Feel free to use this code (see more on [license](#license)).
 
 ## Built with
 This project list the following frameworks for its development:
-*[jQuery](https://jquery.com/) - The JavaScript library
-*[waypoints](http://imakewebthings.com/waypoints/) - Trigger a function when you scroll to an element.
+* [jQuery](https://jquery.com/) - The JavaScript library
+* [waypoints](http://imakewebthings.com/waypoints/) - Trigger a function when you scroll to an element.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -172,7 +181,7 @@ Contributions are what make the open source community such an amazing place to l
 
 <!-- AUTHORS -->
 ## Authors
-* **Guillem Martí** - [@guimarbe](https://twitter.com/guimarbe)
+* **Guillem Martí**: built and documentation 
 
 <!-- LICENCE -->
 ## License
@@ -180,16 +189,16 @@ The license of this project is from [Jonas Schmedtmann](http://codingheroes.io).
 
 <!-- CONTACT -->
 ## Contact
-Guillem Martí - @guimarge
+Guillem Martí - [@guimarbe](https://twitter.com/guimarbe)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-*[atom](https://atom.io/) - My preferred text editor
-*[Emmet](https://emmet.io/)
-*[Clippy](https://bennettfeely.com/clippy/)
-*[Easings](https://easings.net/)
-*[Cubic bezier](https://cubic-bezier.com/)
-*[Unsplash](https://unsplash.com/)
-*[Coverr](https://coverr.co/)
-*[Flaticon](https://www.flaticon.com/)
-*[Can I use?](https://caniuse.com/)
+* [atom](https://atom.io/) - My preferred text editor
+* [Emmet](https://emmet.io/)
+* [Clippy](https://bennettfeely.com/clippy/)
+* [Easings](https://easings.net/)
+* [Cubic bezier](https://cubic-bezier.com/)
+* [Unsplash](https://unsplash.com/)
+* [Coverr](https://coverr.co/)
+* [Flaticon](https://www.flaticon.com/)
+* [Can I use?](https://caniuse.com/)
