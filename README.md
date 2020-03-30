@@ -1,5 +1,5 @@
 <!-- PROJECT LOGO -->
-<br />
+<br>
 <p align="center">
   <a href="https://github.com/guimarbe/natours">
     <img src="img/logo-green-1x.png" alt="Logo" width="120" height="120">
@@ -30,7 +30,7 @@ Virtual site of a touring company focused on organazing nature tours.
 
 ## About the Project
 ![Screenshot of the project](screenshot.png)
-<br />
+<br>
 Natours is a web page example developed by Jonas Schmedtmann in the Udemy course "Advanced CSS and Sass course". I wrote this code to learn the advanced techniques used nowadays to develop modern web pages. Besides, this code will help to develop other webpages as a code reference.
 
 **Notes**
@@ -54,7 +54,7 @@ In this project, I used the BEM (Block, Element, Modifier) methodology, wich is 
 	<button class="btn btn--white"></button>
 </header>
 ```
-```css
+```scss
 // SCSS Code
 .header {
 
@@ -175,9 +175,9 @@ This project list the following frameworks for its development:
 Contributions are what make the open source community such an amazing place to learn, inspire and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the project.
-2. Create your Feature Branch: `git checkout -b feature/`.
+2. Create your Feature Branch: `git checkout -b feature/example-name`.
 3. Commit your changes: `git commit -m 'Add some features'`.
-4. Push to the Branch: `git push origin feature`.
+4. Push to the Branch: `git push origin feature/example-name`.
 5. Open a Pull Request.
 
 <!-- AUTHORS -->
