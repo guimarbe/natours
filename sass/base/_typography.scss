@@ -1,0 +1,92 @@
+/*	Por temas de herencia, meteremos en el cuerpo del documento todo lo que esté
+*	relacionado con las fuentes.
+**/
+body {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	color: $color-grey-dark;
+}
+
+
+.heading-primary {
+	color: $color-white;
+	text-transform: uppercase;
+	margin-bottom: 6rem;
+
+	backface-visibility: hidden; // se ha usado para arreglar la animación
+
+	&--main {
+		display: block;
+		font-size: 6rem;
+		font-weight: 400;
+		letter-spacing: 3.5rem;
+
+		animation-name: moveInLeft; // Llamamos al @keyframe
+		animation-duration: 2.5s; // establecemos una duración
+		animation-timing-function: ease-out; // acelera al principio y se frena al final
+		/*animation-delay: 1s;
+		animation-iteration-count: 3;*/
+
+		@include respond (phone) {
+			letter-spacing: 1rem;
+			font-family: 5rem;
+		}
+	}
+
+	&--sub {
+		display: block;
+		font-size: 2rem;
+		font-weight: 400;
+		letter-spacing: 1.75rem;
+
+		animation-name: moveInRight;
+		animation-duration: 2.5s;
+		animation-timing-function: ease-out;
+
+		@include respond (phone) {
+			letter-spacing: .5rem;
+		}
+	}
+}
+
+.heading-secondary {
+	font-size: 3.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: inline-block;
+	background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+	-webkit-background-clip: text;
+	color: transparent;
+	letter-spacing: .2rem;
+	transition: all .2s;
+
+	@include respond (tab-port) {
+		font-size: 3rem;
+	}
+	@include respond (phone) {
+		font-size: 2.5rem;
+	}
+
+	// Este códigpo nos permite animar el título al hacer hover
+	&:hover {
+		transform: skewY(2deg) skewX(15deg) scale(1.1); // rotación y agrandamiento
+		text-shadow: .5rem 1rem 2rem rgba($color-black, .2); // sombreado
+	}
+}
+
+.heading-tertiary {
+	font-size: $default-font-size;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: $default-font-size;
+	/*	Esto es para aplicar un margen inferior a todos los párrafos menos
+	*	al último. Ahí está la magia del :not().
+	**/
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}

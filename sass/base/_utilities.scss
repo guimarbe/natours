@@ -1,0 +1,28 @@
+/*	Aquí se almacenan clases con un único estilo para su reutilización.
+*	Como indica su nombre, son aplicaciones rápidas, útiles y puntuales.
+*/
+
+// Centrar elementos de tipo display: inline, inline-block.
+.u-center-text { text-align: center !important; }
+
+// Diferentes márgenes inferiores
+.u-margin-bottom-small { margin-bottom: 1.5rem !important; }
+.u-margin-bottom-medium {
+	margin-bottom: 4rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 3rem !important;
+	}
+}
+.u-margin-bottom-big {
+	margin-bottom: 8rem !important;
+
+	@include respond(tab-port) {
+		margin-bottom: 5rem !important;
+	}
+}
+
+// Diferentes tipos de márgenes superiores
+.u-margin-top-small { margin-top: 1.5rem !important; }
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }

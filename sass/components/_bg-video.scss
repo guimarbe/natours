@@ -1,0 +1,12 @@
+.bg-video {
+	@include full-viewport;
+	z-index: -1;
+	opacity: .2;
+	overflow: hidden; // ajusta el video al tanmaño del elemento padre
+
+	&__content {
+		height: 100%;
+		width: 100%;
+		object-fit: cover; // Similar al bg-size cover de la imagen
+	}
+}

@@ -1,0 +1,58 @@
+/* 	Con el selector universal, reinicializamos el margen y el relleno a 0,
+*	ya que cada navegador web tiene una configuración diferente. El border-box
+*	es par aque el margin/padding no se añada al total width y total heigh de
+*	la caja de cada elemento. Edit: usamos la herencia para mejorar esto.
+**/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	/*box-sizing: border-box;*/
+	box-sizing: inherit;
+}
+
+html {
+	/*	1. Ponemos el tamaño de la fuente a 10px, para que 1rem sea 10px. Refactorizamos
+	*	todo el documento pasando todos los valores en px a rem's.
+	*/
+	//font-size: 10px;
+
+	/*	2. La mejor práctica es usar el tamaño de fuente del navegador del
+	*	usuario. En la mayoría de navegadores, suele ser 16px, por lo que 10px
+	*	son el 62.5% de los 16px iniciales (1 rem = 10px; 10px/16px = 62.5%).
+	*/
+	font-size: 62.5%;
+
+	@include respond(tab-land) { // ¿width < 1200?
+		font-size: 56.25%; // 1 rem = 9px; 9px/16px = 56.25%
+	}
+	@include respond(tab-port) { // ¿width < 900?
+		font-size: 50%; // 1 rem = 8px; 8px/16px = 50%
+	}
+	/*@include respond(phone) {
+		font-size: 50%; // 1 rem = 8px; 8px/16px = 50%
+	}*/
+	@include respond(big-desktop) {
+		font-size: 75%; // 1 rem = 12px; 12px/16px = 75%
+	}
+
+	// ¡El orden importa! La sentencia más abajo sobreescribe la anterior
+}
+
+/*	Por temas de herencia, meteremos en el cuerpo del documento todo lo que esté
+*	relacionado con las fuentes.
+**/
+body {
+	box-sizing: border-box;
+	padding: 3rem;
+
+	@include respond(tab-port) { // ¿width < 900?
+		padding: 0;
+	}
+}
+
+::selection {
+	background-color: $color-primary;
+	color: $color-white;
+}
